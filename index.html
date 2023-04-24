@@ -15,7 +15,7 @@
         <h1>Alexandre Steinhauslin</h1>
     </header>
 
-    <nav>
+    <nav class="pages">
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="gallery.html">Gallery</a>
@@ -24,7 +24,7 @@
     <main>
         <section>
             <h2>Web Dev Concepts:</h2>
-            <nav>
+            <nav class="locations">
                 <!-- sections  -->
                 <a href="#webServers">Web Servers</a>
                 <a href="#frontendDesign">Frontend Design</a>
@@ -32,7 +32,7 @@
                 <a href="#cascadingStylesheets">Cascading Stylesheets</a>
 
             </nav>
-            <article id= "webServers">
+            <article id="webServers">
                 <h3>Web Servers</h3>
                 <!-- Explain what index means as it relates to websites and servers. -->
                 <p>
@@ -194,40 +194,44 @@
             <article id="optimizingImages">
                 <h3>Optimizing Images</h3>
                 <!-- What are the 6 major specifications of images for the web?  And why?  -->
-                Images, in order to be optimized, need to meet ceratin specifications. They need to have a 
-                <strong>descriptive file name</strong>. A descriptive file name helps improve SEO so users 
-                can find it. <strong>Small file size</strong> to attain the fastest load time. This also means
-                delivering high resolution images onlt to high resolution devices. <strong>Exact dimensions</strong>,
-                utilizing larger pixels images for smaller pixels spaces only increases load time, it is necessary
-                to crop or reduce these in size. <strong>Correct file format</strong>, different file formats
-                are suited for different purposes, using the correct one will reduce load time. And, finally, 
-                the <strong>color mode</strong>, using RGB versus Indexed coloring.
+                <p>
+                    Images, in order to be optimized, need to meet certain specifications. They need to have a
+                    <strong>descriptive file name</strong>. A descriptive file name helps improve SEO, so users
+                    can find it. <strong>Small file size</strong> to attain the fastest load time. This also means
+                    delivering high resolution images only to high resolution devices. <strong>Exact
+                        dimensions</strong>,
+                    utilizing larger pixels images for smaller pixels spaces only increases load time, it is necessary
+                    to crop or reduce these in size. <strong>Correct file format</strong>, different file formats
+                    are suited for different purposes, using the correct one will reduce load time. And, finally,
+                    the <strong>color mode</strong>, using RGB versus indexed coloring.
+                </p>
                 <!-- Which file formats are most appropriate for photos and for line art? And why? -->
                 <p>
-                The most common file formats for images are .JPG and WebP for photography, which have good compression.
-                While, on the other hand, .GIF, .PNG, and .SVG are used for line art. 
+                    The most common file formats for images are .JPG and WebP for photography, which have good
+                    compression.
+                    While, on the other hand, .GIF, .PNG, and .SVG are used for line art.
                 </p>
             </article>
             <article id="cascadingStylesheets">
                 <h3>Cascading Stylesheets</h3>
                 <!-- What are the main reasons to incorporate stylesheets in websites and apps? -->
                 <p>
-                    While semantic HTML gives basic structure to webpages, it is actually CSS 
-                    (Cascading Stylesheets) that defines 
-                    how the content is supposed to behave. We incorporate stylesheets in website because they
-                    can improve usability, readability, and give the webpage an engaging design. 
+                    While semantic HTML gives basic structure to webpages, it is actually CSS
+                    (Cascading Stylesheets) that defines
+                    how the content is supposed to behave. We incorporate stylesheets in websites because they
+                    can improve usability, readability, and give the webpage an engaging design.
                 </p>
                 <!-- What are the 5 ways to incorporate styles? And why? -->
                 <p>
-                    There are different ways you can incorporate stylsheets to your App.
-                    <strong>Externally</strong> through the reference of an external .css file from the 
-                    &lt;link&gt; tag inside the &lt;head&gt; area of a website. This is by far the most 
-                    preferred method. 
+                    There are different ways you can incorporate stylesheets to your App.
+                    <strong>Externally</strong> through the reference of an external .css file from the
+                    &lt;link&gt; tag inside the &lt;head&gt; area of a website. This is by far the most
+                    preferred method. You would use this method because it is the most efficient.
                     The other ways are done directly within the HTML and JavaScript files.
                     <strong>Embedded</strong> within a &lt;style&gt; tag.
                     <strong>Inline</strong> within the element we are styling.
-                    In <strong>JavaScript template literals</strong>  within a JavaScript function.
-                    And, finally <strong>regular JavaScript</strong>, my directly manipulation the 
+                    In <strong>JavaScript template literals</strong> within a JavaScript function.
+                    And, finally <strong>regular JavaScript</strong>, my directly manipulation the
                     DOM(Document Object Module).
                 </p>
             </article>
