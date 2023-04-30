@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alexandre Steinhauslin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><span>Alexandre Steinhauslin</span></h1>
+    </header>
+
+    <nav class="pages">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Contact</h2>
+            <p>Fill out this form if you would like to reach out to me.</p>
+            <form>
+                <fieldset>
+                    <legend>Please enter your data</legend>
+                    <label>
+                        First Name:
+                        <input type="text" name="name" placeholder="name" required minlength="3" maxlength="20" size="10">
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" name="email" placeholder="email" required minlength="3" maxlength="20" size="10">
+                    </label>
+                    <label>
+                        Let me know why you are contacting me today:
+                        <textarea name="why">
+                            please explain...
+                        </textarea>
+                    </label>
+                    <label>
+                        <select name="reason">
+                            <option value="">--Please select an option--</option>
+                            <option value="create website">Create your website</option>
+                            <option>Tutoring</option>
+                            <option>Employment Oppotunity</option>
+                            <option>Just want to connect</option>
+                        </select>
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy 2023 <a href="https://www.alexandresteinhauslin.dev/">Alexandre Steinhauslin Web Developer</a>
+        </p>
+    </footer>
+</body>
+
+</html>
