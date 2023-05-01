@@ -30,6 +30,8 @@
                 <a href="#frontendDesign">Frontend Design</a>
                 <a href="#optimizingImages">Optimizing Images</a>
                 <a href="#cascadingStylesheets">Cascading Stylesheets</a>
+                <a href="#forms">Forms</a>
+                <a href="#backend">Backend</a>
 
             </nav>
             <article id="webServers">
@@ -231,52 +233,81 @@
                     <strong>Embedded</strong> within a &lt;style&gt; tag.
                     <strong>Inline</strong> within the element we are styling.
                     In <strong>JavaScript template literals</strong> within a JavaScript function.
-                    And, finally <strong>regular JavaScript</strong>, my directly manipulation the
+                    And, finally <strong>regular JavaScript</strong>, my directly manipulation of the
                     DOM(Document Object Module).
                 </p>
             </article>
-            <article id="formsAndBackend">
+            <article id="forms">
                 <h3>Forms</h3>
                 <!-- What are the 6 major goals of accessible forms? And why? -->
-                There are six major goals for accessible forms, the first one being to
-                <strong>provide clear instructions</strong> above the form and in the labels, keeping
-                in mind that placeholder values are only helpful to users with vision.
-                <strong>Why</strong> is the data being gathered and <strong>which fields are required</strong>.
-                It is also important to set the <strong>first field to autofocus</strong> so users don't have
-                to use a pointer to start filling the form out.
-                Add <strong>tab indexing</strong> to complex forms so users know in which order to fill the 
-                form fields.
-                Furthermore, the <strong>validation messages need to be screen readable</strong>, so the 
-                visually impaired can correct the errors in their form.
-                These goals are important to achieve because they ensure a minimum amount of accessibility, 
-                which means that users with physical or mental disabilities can utilize them.
+                <p>
+                    There are six major goals for accessible forms, the first one being to
+                    <strong>provide clear instructions</strong> above the form and in the labels, keeping
+                    in mind that placeholder values are only helpful to users with vision.
+                    <strong>Why</strong> is the data being gathered and <strong>which fields are required</strong>.
+                    It is also important to set the <strong>first field to autofocus</strong>, so users don't have
+                    to use a pointer to start filling the form out.
+                    Add <strong>tab indexing</strong> to complex forms, so users know in which order to fill the
+                    form fields.
+                    Furthermore, the <strong>validation messages need to be screen readable</strong>, so the
+                    visually impaired can correct the errors in their form.
+                    These goals are essential to achieve because they ensure a minimum amount of accessibility,
+                    which means that users with physical or mental disabilities can utilize them.
+                </p>
                 <!-- What are the major tags, their attributes, and their purposes?   -->
-                The most important tags of forms are the &lt;form&gt;, &lt;label&gt;, &lt;input&gt;, and the 
-                &lt;textarea&gt; tags. The <strong>&lt;form&gt;</strong> is by far the most important, it 
-                encompasses the entire form. Two of its main attributes are <strong>action</strong>, which 
-                specifies, as a URL, where the request from the form should be sent; and the 
-                <strong>method</strong> which specifies the HTTP method to be used in the request sent when 
-                the form is submitted. 
-                The &lt;label&gt; tag is used by screen readers to describe which data will be needed. 
-                It also increases the pointer's click area. The for attribute in the label needs to match
-                the form control's id, this could be avoided by nesting the form control inside the laebel
-                <strong>&lt;input&gt;</strong> and <strong>&lt;textarea&gt;</strong>
-                are used to collect the form's data. Thanks to its <strong>type</strong> attribute the 
-                &lt;input&gt; tag can accept many different kinds of data, from text to checkboxes, buttons, 
-                and all sorts of dropdown menus. The <strong>name</strong> attribute is essential to the 
-                &lt;input&gt; tag as it pairs up with the form's value when the form is submitted. 
-                <strong>Required</strong> is also an important attribute for the &lt;input&gt; tag as the 
-                form can't be submitted until this field is filled in.
-                For field that require multiple lines &lt;textarea&gt; is used. This tag has no unique attributes.
+                <p>
+                    The most significant tags of forms are the &lt;form&gt;, &lt;label&gt;, &lt;input&gt;, and the
+                    &lt;textarea&gt; tags. The <strong>&lt;form&gt;</strong> is by far the most important, it
+                    encompasses the entire form. Two of its main attributes are <strong>action</strong>, which
+                    specifies, as a URL, where the request from the form should be sent; and the
+                    <strong>method</strong>, which specifies the HTTP method to be used in the request sent when
+                    the form is submitted.
+                    The &lt;label&gt; tag is used by screen readers to describe which data will be needed.
+                    It also increases the pointer's click area. The for attribute in the label needs to match
+                    the form control's id, this could be avoided by nesting the form control inside the label
+                    <strong>&lt;input&gt;</strong> and <strong>&lt;textarea&gt;</strong>
+                    are used to collect the form's data. Thanks to its <strong>type</strong> attribute, the
+                    &lt;input&gt; tag can accept many different kinds of data, from text to checkboxes, buttons,
+                    and all sorts of dropdown menus. The <strong>name</strong> attribute is essential to the
+                    &lt;input&gt; tag as it pairs up with the form's value when the form is submitted.
+                    <strong>Required</strong> is also an important attribute for the &lt;input&gt; tag as the
+                    form can't be submitted until this field is filled in.
+                    For field that require multiple lines &lt;textarea&gt; is used. This tag has no unique attributes.
+                </p>
                 <!-- What are the major form style recommendations to improve usability?  And why? -->
-                <p></p>
-                <h3>Backend</h3>
+                <p>
+                    There are many ways to improve form usability. One way is to use the additional
+                    &lt;fieldset&gt; and &lt;legend&gt; tags to separate form controls into logical groups, not
+                    only because it helps understand the group, but also because it improves accessibility to
+                    the visually impaired.
+                    Since many forms are filled via cellphone, the height and width of control elements should be 
+                    at least the size of the tip of a finger. 
+                    In order to not overwhelm the user and to make the form easier to understand, it is recommended
+                    to display the labels as blocks.
+                    Other styling changes will help the user's experience of filling out a form by seeing where they
+                    are at and what is already completed. One of these styling changes is the <strong>autofocus</strong>
+                    attribute for the &lt;input&gt; tag. This attributes places the user's cursor in, preferably, the 
+                    first field to be filled, without the need to select it. Pointing out which fields are required is 
+                    also very helpful.
+                </p>
+            </article>
+            <article id="backend">
+            <h3>Backend</h3>
                 <!-- What are these three technologies, and how can we use them to improve the web development experience? -->
-                <p></p>
-                <p></p>
-                <p></p>
-
-
+                <p><strong>Node.js</strong>
+                    is a runtime environment that allows us to run JavaScript outside the browser. 
+                    This means that JavaScript can be used to develop server-side and networking applications. Node offers a great 
+                    amount of JavaScript libraries which ease development. 
+                </p> 
+                <p><strong>NPM</strong>
+                    stands for Node Package Manager, and it allows us to manage our Node packages. NPM 
+                    makes it easy to download packages directly from the command line. Other things that NPM is useful for is creating
+                    new node applications with a simple command <code style="color: black; background-color: #eeeeff;">npm init</code>. 
+                    NPM contains over <link href="https://www.w3schools.com/whatis/whatis_npm.asp" 800,000 libraries> and it is used by open-source developers to share
+                    software.
+                </p> 
+                <p><strong>Express.js</strong> is a framework for Node that allows us to manage HTTP requests at different URL paths.
+                One of the great things about Express is that developers have created middleware packages to fix almost any problem.</p>
             </article>
         </section>
     </main>
