@@ -19,28 +19,32 @@
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
     </nav>
 
     <main>
         <section>
             <h2>Contact</h2>
-            <p>Fill out this form if you would like me to get back to you. You can press the 
-                <strong>Tab</strong> key once you are done with a field. Don't forget to press 
-                the Submit button.
-            </p>
-            <form action="/form_data" method="POST">
-                <fieldset>
-                    <legend>This part of the form is required</legend>
-                    <label class="required" for="name">
-                        Name:
-                    </label>
-                    <input type="text" name="name" id="name" placeholder="name" autofocus required minlength="3"
-                        maxlength="30" size="10">
-                    <label class="required" for="email">
-                        Email:
-                    </label>
-                    <input type="email" name="email" id="email" placeholder="email" required minlength="3"
-                        maxlength="20" size="10" pattern="[^ @]+@[^ @]+.[a-z]+">
+            <article>
+                <p>Fill out this form if you would like me to get back to you. You can press the
+                    <strong>Tab</strong> key once you are done with a field. Don't forget to press
+                    the Submit button. The asteriks signifies that a field is necessary in order to 
+                    submit the form. A red box signifies that your input deosn't meet the required
+                    pattern.
+                </p>
+                <form action="/form_data" method="POST">
+                    <fieldset>
+                        <legend>This part of the form is required</legend>
+                        <label class="required" for="name">
+                            Name:
+                        </label>
+                        <input type="text" name="name" id="name" placeholder="name" autofocus required minlength="3"
+                            maxlength="30" size="10">
+                        <label class="required" for="email">
+                            Email:
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="email" required minlength="3"
+                            maxlength="20" size="10" pattern="[^ @]+@[^ @]+.[a-z]+">
                         <label class="required" for="reason">
                             Why are you contacting me today?:
                         </label>
@@ -51,62 +55,58 @@
                             <option value="you want to offer me employment">Employment Oppotunity</option>
                             <option value="you just want to connect">Just want to connect</option>
                         </select>
-                        <label for="why" required>
+                        <label for="why" class="required">
                             Please explain your case:
                         </label>
-                        <textarea name="why" id="why" maxlength="200">
-                            Write 200 characters or less...
-                        </textarea>
-                </fieldset>
-                <fieldset>
-                    <legend>This part of the form is optional</legend>
-                    <div>
-                        How did you find me?:
-                        <label class="checkbox">
-                            <input name="found_me" value="Google" type="checkbox">
-                            Google Search
-                        </label>
-                        <label class="checkbox">
-                            <input name="found_me" value="LinkedIn" type="checkbox">
-                            Through LinkedIn
-                        </label>
-                        <label class="checkbox">
-                            <input name="found_me" value="word of mouth" type="checkbox">
-                            Word of Mouth
-                        </label>
-                        <label class="checkbox">
-                            <input name="found_me" value="other" type="checkbox">
-                            Other
-                        </label>
-                    </div>
-                    <label for="more_info">
-                        Anythign else I need to know?:
-                    </label>
-                    <textarea name="more_info" id="more_info">
-                            Write 200 characters or less...
-                        </textarea>
-                    <div>
+                        <textarea name="why" id="why" maxlength="200" rows="5" cols="40" required placeholder="Write 200 characters or less..."></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>This part of the form is optional</legend>
                         <div>
-                            Is this time sensitive?
-                            <label>
-                                Yes
-                                <input type="radio" value="urgent" name="urgency" unchecked>
-                            </label>
-                            <label>
-                                No
-                                <input type="radio" value="not urgent" name="urgency" checked>
-                            </label>
-                            <label>
-                                Somewhat
-                                <input type="radio" value="somewhat urgent" name="urgency" unchecked>
-                            </label>
+                            <span>How did you find me?:</span>
+                            <div>
+                                <input name="found_me" value="Google"  id="google" type="checkbox">
+                                <label class="checkbox" for="google" >Google Search</label>
+                            </div>
+                            <div>
+                                <input name="found_me" value="LinkedIn" id="linkedin" type="checkbox">
+                                <label class="checkbox" for="linkedin">Through LinkedIn</label>
+                            </div>
+                            <div>
+                                <input name="found_me" value="word of mouth" id="word" type="checkbox">
+                                <label class="checkbox" for="word">Word of Mouth</label>
+                            </div>
+                            <div>
+                                <input name="found_me" value="other" id="other" type="checkbox">
+                                <label class="checkbox" for="other">Other</label>
+                            </div>
                         </div>
-                    </div>
-                </fieldset>
-                <label>
+                        <label for="more_info">
+                            Anything else I need to know?:
+                        </label>
+                        <textarea name="more_info" id="more_info" rows="5" cols="40" placeholder="Write 200 characters or less..."></textarea>
+                        <div>
+                            <span>
+                                Is this time sensitive?
+                            </span>
+                            <div>
+                                <input type="radio" value="urgent" id="yes_urgency" name="urgency" unchecked>
+                                <label class="radio" for="yes_urgency">Yes</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" value="not urgent" id="no_urgency" name="urgency" checked>
+                                <label class="radio" for="no_urgency">No</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" value="somewhat urgent" for="somewhat_urgency" name="urgency" unchecked>
+                                <label class="radio" for="somewhat_urgency">Somewhat</label><br>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <label for="submission"></label>
                     <button class="submit" name="submit">Submit</button>
-                </label>
-            </form>
+                </form>
+            </article>
         </section>
     </main>
 

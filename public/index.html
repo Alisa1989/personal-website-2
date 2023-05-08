@@ -19,6 +19,7 @@
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
     </nav>
 
     <main>
@@ -32,6 +33,7 @@
                 <a href="#cascadingStylesheets">Cascading Stylesheets</a>
                 <a href="#forms">Forms</a>
                 <a href="#backend">Backend</a>
+                <a href="#javascript">JavaScript</a>
 
             </nav>
             <article id="webServers">
@@ -280,34 +282,133 @@
                     &lt;fieldset&gt; and &lt;legend&gt; tags to separate form controls into logical groups, not
                     only because it helps understand the group, but also because it improves accessibility to
                     the visually impaired.
-                    Since many forms are filled via cellphone, the height and width of control elements should be 
-                    at least the size of the tip of a finger. 
+                    Since many forms are filled via cellphone, the height and width of control elements should be
+                    at least the size of the tip of a finger.
                     In order to not overwhelm the user and to make the form easier to understand, it is recommended
                     to display the labels as blocks.
                     Other styling changes will help the user's experience of filling out a form by seeing where they
                     are at and what is already completed. One of these styling changes is the <strong>autofocus</strong>
-                    attribute for the &lt;input&gt; tag. This attributes places the user's cursor in, preferably, the 
-                    first field to be filled, without the need to select it. Pointing out which fields are required is 
+                    attribute for the &lt;input&gt; tag. This attributes places the user's cursor in, preferably, the
+                    first field to be filled, without the need to select it. Pointing out which fields are required is
                     also very helpful.
                 </p>
             </article>
             <article id="backend">
-            <h3>Backend</h3>
+                <h3>Backend</h3>
                 <!-- What are these three technologies, and how can we use them to improve the web development experience? -->
                 <p><strong>Node.js</strong>
-                    is a runtime environment that allows us to run JavaScript outside the browser. 
-                    This means that JavaScript can be used to develop server-side and networking applications. Node offers a great 
-                    amount of JavaScript libraries which ease development. 
-                </p> 
+                    is a runtime environment that allows us to run JavaScript outside the browser.
+                    This means that JavaScript can be used to develop server-side and networking applications. Node
+                    offers a great
+                    amount of JavaScript libraries which ease development.
+                </p>
                 <p><strong>NPM</strong>
-                    stands for Node Package Manager, and it allows us to manage our Node packages. NPM 
-                    makes it easy to download packages directly from the command line. Other things that NPM is useful for is creating
-                    new node applications with a simple command <code style="color: black; background-color: #eeeeff;">npm init</code>. 
-                    NPM contains over <link href="https://www.w3schools.com/whatis/whatis_npm.asp" 800,000 libraries> and it is used by open-source developers to share
+                    stands for Node Package Manager, and it allows us to manage our Node packages. NPM
+                    makes it easy to download packages directly from the command line. Other things that NPM is useful
+                    for is creating
+                    new node applications with a simple command "NPM init".
+                    NPM contains over
+                    <link href="https://www.w3schools.com/whatis/whatis_npm.asp" 800,000 libraries> and it is used by
+                    open-source developers to share
                     software.
-                </p> 
-                <p><strong>Express.js</strong> is a framework for Node that allows us to manage HTTP requests at different URL paths.
-                One of the great things about Express is that developers have created middleware packages to fix almost any problem.</p>
+                </p>
+                <p><strong>Express.js</strong> is a framework for Node that allows us to manage HTTP requests at
+                    different URL paths.
+                    One of the great things about Express is that developers have created middleware packages to fix
+                    almost any problem.</p>
+            </article>
+            <article id="javascript">
+                <h3>JavaScript</h3>
+                <!-- What are the main data types? -->
+                <p>The main data types in JavaScript are <strong>numbers, boolean values, strings, symbols,
+                        objects</strong> and
+                    special values <strong>undefined</strong> and <strong>null</strong>. All these types, except for
+                    objects, are considered
+                    primitive data types. In JavaScript we don't need to declare the data type of a variable in fact, we
+                    can even assign values
+                    of different types to the same variable throughout the program.
+                </p>
+                <!-- How are objects, arrays and JSON used? -->
+                <p>
+                    a JavaScript <strong>object</strong> is a set of name-value pairs known as object properties. We can
+                    get a list of all the
+                    properties of an object by passing it to the method "Object.keys()" <strong>Arrays</strong> in JS
+                    are objects whose property names are integers but as strings (ex. '0','1','2') although, the can be
+                    accessed by using them in
+                    integer form. The elements of arrays can be of different data types, even objects. By using method
+                    "includes()" we can determine
+                    if an array contains an element with the passed in value.
+                    <strong>JSON</strong> JavaScript Object Notation is a widely used format to exchange data between
+                    applications and programming
+                    languages. JSON is so widely used that many programming languages have libraries to read and write
+                    it. We can use "JSON.stringify()"
+                    to create a JSON string from a JavaScript object, and "JSON.parse()" to create JavaScript object
+                    from a JSON string.
+                </p>
+                <!-- How are conditionals and loops used? -->
+                <p>
+                    One thing that makes JavaScript different from other programming languages is the <strong>automatic
+                        type conversion</strong>, which
+                    in JS can have unexpected results. For this reason, it is recomended to avoid automatic conversion
+                    to Boolean values when it can be
+                    easily done by having conditions explicitly produce Boolean values. Furthermore, when using
+                    comparison operators, make sure that both
+                    operands are of the same data type. Another important aspect of JS is the difference between strict
+                    and loose comparison operators, it
+                    is important to use the strict comparison operators when possible as they don't allow for automatic
+                    typecasting.
+                    Like other languages, JavaScript supports "if" and "switch" statements. The loops in JS are of course
+                    the usual "while" loop, but also
+                    "do while", "for", "for of", and "for in". The <strong>while</strong> loop keeps executing as long
+                    as the condition is met, while the
+                    <strong>do while</strong> loop is mostly the same except that it executes the loop once before
+                    evaluating the expression. The
+                    <strong>for</strong> loop is the same as many other languages, but what JS offers more than some
+                    other languages is the
+                    <strong>for of</strong> loop for iterating over elements of an iterable value, <strong>for
+                        in</strong> which, instead, iterates over
+                    the properties of an object.
+                </p>
+                <!-- What is object-oriented programming? -->
+                <p>
+                    <strong>Object-oriented programming</strong>, or OOP for short, is the utilization of classes and
+                    objects for the creation of functions and the
+                    storing of information within a program. Classes and Objects make it easy to structure the code into
+                    simple and reusable pieces of code.
+                    Classes set the blueprints and rules on how objects are created and behave. Objects, instead, are
+                    instances of classes and are meant to
+                    easily represent real world "objects", such as a bicycle or a dog. Classes can also inherit from
+                    other classes in order to reutilize some
+                    of those values and methods but, at the same time, allowing them to be modified by the subclass.
+                </p>
+                <!-- What is functional programming? -->
+                <p>
+                    <strong>Functional programming</strong> doesn't use classes and objects but, instead, uses independent
+                    functions and also closure to store values.
+                    To Be Continued...
+                </p>
+                <!-- JavaScript golden rules -->
+                <p>
+                    The Golden Rules of JavaScript are: 1. declare variables with let or const, not var. 2. Use strict
+                    mode. 3. Know your types
+                    and avoid automatic type conversion. Golden Rule 4: Understand prototypes, but use modern syntax for
+                    classes, constructors, and methods.
+                </p>
+                <!-- let, var and const -->
+                <p>
+                    <strong>const</strong> is used for values that don't change. <strong>let</strong> is instead used
+                    when a value will or might
+                    change. When it comes to objects, we can indeed modify values of const object properties, but we
+                    cannot assign a new value to
+                    a const variable. Declaring variables with <strong>var</strong> should be avoided because unlike
+                    let, var variables can be
+                    redeclared, they don't have Block Scope, and can be used before being declared.
+                    Always use <strong>"strict mode"</strong> as it makes otherwise accepted bad syntax into real
+                    errors. For example, mistyping
+                    a variable in JS creates a new variable instead of throwing an error.
+                    The <strong>One True Brace Style</strong> is recommended when writing JavaScript.
+                </p>
+                <!-- protoypes and classes -->
             </article>
         </section>
     </main>

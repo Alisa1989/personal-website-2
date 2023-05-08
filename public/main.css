@@ -117,7 +117,9 @@ nav.locations a:hover{
 
 }
 
-
+.radio, .checkbox {
+  display: inline;
+}
 
 /*  -----  Typography  ----- */
 p {
@@ -169,7 +171,20 @@ del {}
 ins {}
 
 /*  ----- Table ----- */
-table {}
+table {
+  border-collapse: collapse;
+  background-color: var(--light-orange);
+  margin: 50px auto;
+}
+tr, th, td {
+  border: 4px solid var(--dark-orange);
+}
+th, td {
+  padding: 15px;
+}
+th:nth-col(3) {
+  width: 20px;
+}
 caption {}
 thead {}
 tbody {}
@@ -208,6 +223,10 @@ select {
   padding: 1%;
   font-family: inherit;
 }
+
+input[type='number']{
+  width: 50px;
+} 
 
 label {
   display: block;
@@ -260,7 +279,10 @@ label.required:after {
   output {}
   meter {}
   progress {}
-  select {}
+  select[data-chosen='none'] { 
+    /* border: 2px solid red; */
+    outline-offset:2px;outline:12px solid;
+}
   optgroup {}
   option {}
   textarea {
