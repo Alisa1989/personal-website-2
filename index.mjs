@@ -1,11 +1,15 @@
 'use strict';
 
+import express from 'express';
+import 'dotenv/config';
+import asyncHandler from'express-async-handler';
+import {products} from './products.js';
+import nodemailer from "nodemailer";
 
-const {products} = require('./products');
-const express = require('express');
-const nodemailer = require("nodemailer");
 const app = express();
-const PORT = 3000;
+// const PORT = process.env.PORT;
+// console.log("the number is right but", notWorking)
+const PORT = 3000
 
 
 app.use(express.urlencoded({

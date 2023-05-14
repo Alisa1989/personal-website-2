@@ -411,7 +411,8 @@
                     redeclared, they don't have Block Scope, and can be used before being declared.
                     Always use <strong>"strict mode"</strong> as it makes otherwise accepted bad syntax into real
                     errors. For example, mistyping
-                    a variable in JS creates a new variable instead of throwing an error.
+                    a variable in JS creates a new variable instead of throwing an error. ES modules are automatically
+                     in strict mode.
                     The <strong>One True Brace Style</strong> is recommended when writing JavaScript.
                 </p>
             </article>
@@ -419,6 +420,19 @@
                 <h3>The DOM</h3>
                 <!-- Why do developers update the DOM of a page using JavaScript and Express? -->
                 <p>
+                    Developers use JavaScript to manipulate the <strong>DOM</strong> in order to make web applications
+                    interactive. This interactivity in web applications is called <strong>event-driven programming</strong>. 
+                    It works by waiting for a user's action, such as a mouse click or pressing a key, and it dispatches
+                    an event as a response.   
+                </p>
+                <!-- what are preventDefault and stopPropagation -->
+                <p>
+                    If the parent element has defined an event handler for the same event, the event gets propagated upwards.
+                </p>
+                <!-- what is asynchronous JS  -->
+                <p>
+                    resolve and reject
+                    "callback hell"
 
                 </p>
             </article>

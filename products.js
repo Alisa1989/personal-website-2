@@ -15,6 +15,6 @@ module.exports.products = products;
 
 // Display the object in a table in the terminal console to confirm it works:
 // https://developer.mozilla.org/en-US/docs/Web/API/Console/table
-console.table(products); 
+// console.table(products);
 
- 
+//  export {products};
