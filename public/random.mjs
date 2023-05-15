@@ -1,10 +1,5 @@
-'use strict';
-
-console.log("random js is executing");
-
-
-async function addToTable() {
-    let person = await getPerson('https://randomuser.me/api/')
+async function addToTable(person) {
+    // let person = await getPerson('https://randomuser.me/api/')
     console.log("person: ", person);
 
     let rowContainer = document.createElement('tr');
@@ -15,7 +10,7 @@ async function addToTable() {
     rowContainer.appendChild(personRow);
     
     personRow = document.createElement('td');
-    personRow.textContent = `${person.name.title} ${person.name.first} ${person.name.last}`;
+    personRow.innerHTML = `<a href="mailto:${person.email}">${person.name.first} ${person.name.last}</a>`;
     rowContainer.appendChild(personRow);
 
     personRow = document.createElement('td');
@@ -25,21 +20,25 @@ async function addToTable() {
     personRow = document.createElement('td');
     personRow.textContent = `${person.location.city}`;
     rowContainer.appendChild(personRow);
-
-
 }
 
-async function getPerson(url) {
+async function getPerson() {
     try {
-        const response = await fetch(url);
+        const response = await fetch('https://randomuser.me/api/');
         const {results} = await response.json();
-        console.log("results", results);
-        return results[0];
+        addToTable(results[0]);
         } catch (error) {
             console.error(error)
         } 
-    }
+}
 
-    window.onload = function() {
-        let frank = document.getElementById('browserRequest').addEventListener("click", addToTable)
-    }
+async function serverGetPerson() {
+    const response = await fetch(`/random-person`);
+    const {results} = await response.json();
+    addToTable(results[0])
+}
+
+window.onload = function() {
+    document.getElementById('browserRequest').addEventListener("click", getPerson)
+    document.getElementById('expressRequest').addEventListener("click", serverGetPerson)    
+}

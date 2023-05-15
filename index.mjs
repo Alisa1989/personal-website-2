@@ -10,7 +10,7 @@ const app = express();
 // const PORT = process.env.PORT;
 // console.log("the number is right but", notWorking)
 const PORT = 3000
-
+let apiCalls = 0
 
 app.use(express.urlencoded({
   extended: true
@@ -18,10 +18,28 @@ app.use(express.urlencoded({
 
 app.use(express.static('public'))
 
+app.use((error, req, res, next) => {
+    console.log(`Unhandled error ${error}, URL = ${req.originalUrl}, method = ${req.method}`)
+    res.status(500).json('500 - server error');
+});
+
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}...`);
 });
 
+app.get('/random-person', asyncHandler(async (req, res, next) => {
+    apiCalls += 1;
+    if (apiCalls >= 10) {
+        console.log(`Total number of API calls = ${apiCalls}`)
+    }
+    next()
+}));
+
+app.get('/random-person', asyncHandler(async (req, res, next) => {
+    const response = await fetch('https://randomuser.me/api/')
+    const person = await response.json() 
+    res.send(person)
+}));
 
 // -------------------------Node Mailer--------------------
 

@@ -236,10 +236,20 @@ label {
   margin-top: 1%;
 }
 
-button {}
+button {
+  border-radius: 10px;
+  background-color: var(--light-orange);
+  color: var(--dark-green);
+}
 
 *:focus {
   background-color: var(--light-orange);
+}
+
+button:hover {
+  background-color: var(--dark-green);
+  color: var(--light-orange);
+  outline: none;
 }
 
 *:required {
