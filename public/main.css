@@ -12,6 +12,7 @@
   --light-orange: #F2994B;
   --orange: #F27830;
   --dark-orange: #D95323;
+  --dark-blue: #00003D;
   --transparent-white: rgba(255, 255, 255, 0.7);
 }
 
@@ -73,7 +74,9 @@ aside {}
 footer {}
 
 /* ----- Anchors ----- Text links */
-a {}
+a {
+  color: var(--dark-blue);
+}
 a:link {}
 a:hover {}
 a:active {}
@@ -193,7 +196,10 @@ thead {}
 tbody {}
 tfoot {}
 tr {}
-  tr:nth-child(even) {}
+tr:nth-child(even) {
+    background-color: var(--orange);
+    color: var(--dark-blue);
+}
 th {}
 td {}
   td:nth-child(1) {}
