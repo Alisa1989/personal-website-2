@@ -82,7 +82,7 @@ function GalleryPage() {
             <p>
                 Here is a little about me
             </p>
-            <article>
+            <article className="gallery">
                 <ImageGallery items={images} />
             </article>
         </>

@@ -251,7 +251,13 @@ label.required:after {
   }
   
 /* ----- Media ----- */
-
+.image-gallery {
+  width: 60%;
+}
+.gallery {
+  display: flex;
+  justify-content: center
+}
 
 
 /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
